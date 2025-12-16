@@ -1,5 +1,5 @@
 # service_b/Dockerfile
-FROM elixir:1.15-alpine AS builder
+FROM elixir:1.18-alpine AS builder
 WORKDIR /app
 COPY . .
 RUN mix local.hex --force && mix local.rebar --force
